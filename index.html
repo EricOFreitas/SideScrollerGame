@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+  <head>
+ 
+    <meta charset="utf-8" />
+ 
+    <title>Phaser - Android (Teste 1)</title>
+ 
+	<!-- Previne o usuário de dar zoom acidentalmente -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+	<!-- Permito adicionar atalhos para o app no cel (trocar ícone depois) -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	
+	<!-- Carrego o phaser e uma biblioteca auxiliar para o controle por touch -->
+    <script type="text/javascript" src="js/gamecontroller.js"></script>
+    <script type="text/javascript" src="js/phaser.js"></script>
+
+	<!-- 
+		No phaser é tudo por states, são como fases do jogo, por exemplo,
+		preload, menu, fases, etc.
+		Há uma convenção para os nomes e iremos usar os seguintes:
+		Boot: Configurações, recursos, etc (Não é mostrado ao usuário)
+		Preload: Imagens, sprites, audio, etc já serão carregados na memória (já mostro um load bar pro user)
+		Game: Onde a diversão acontece :)
+		*Depois se vira pra aprender uma tipo MainMenu
+	-->
+    <script type="text/javascript" src="js/Boot.js"></script>
+    <script type="text/javascript" src="js/Preload.js"></script>
+    <script type="text/javascript" src="js/Game.js"></script>
+ 
+    <style type="text/css">
+ 
+      body {
+ 
+        padding: 0px;
+ 
+        margin: 0px;
+ 
+      }
+ 
+      </style>
+ 
+  </head>
+ 
+  <body> 
+ 
+    <!-- Este js irá iniciar o game -->
+    <script src="js/main.js"></script>
+ 
+  </body>
+ 
+</html>
+<!--Referências: https://software.intel.com/en-us/html5/hub/blogs/how-to-make-a-sidescroller-game-with-html5/ -->
